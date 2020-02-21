@@ -13,11 +13,12 @@ import { ProductListComponent } from './product-list/product-list.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
+      { path: 'products/:productId', component: ProductDetailsComponent },
     ])
   ],
   declarations: [
     AppComponent,
-    TopBarComponent,
+    TopBarComponent, 
     ProductListComponent
   ],
   bootstrap: [ AppComponent ]
